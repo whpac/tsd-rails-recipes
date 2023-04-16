@@ -5,7 +5,7 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "bundle install",
-  "postCreateCommand": "",
+  "postCreateCommand": "rails db:setup",
   "postAttachCommand": {
     "server": "rails server"
   },

@@ -33,6 +33,9 @@ gem "devise", "~> 4.9"
 # Pundit is a simple authorization library [https://github.com/varvet/pundit]
 gem "pundit", "~> 2.3"
 
+# Tailwind CSS [https://tailwindcss.com]
+gem "tailwindcss-rails"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

@@ -30,6 +30,9 @@ gem "jbuilder"
 # Devise is a flexible authentication solution [https://github.com/heartcombo/devise]
 gem "devise", "~> 4.9"
 
+# Pundit is a simple authorization library [https://github.com/varvet/pundit]
+gem "pundit", "~> 2.3"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

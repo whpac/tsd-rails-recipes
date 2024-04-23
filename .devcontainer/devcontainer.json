@@ -7,7 +7,7 @@
   "updateContentCommand": "bundle install",
   "postCreateCommand": "rails db:setup",
   "postAttachCommand": {
-    "server": "bin/dev"
+    "server": "rails server"
   },
   "customizations": {
     "codespaces": {

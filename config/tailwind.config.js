@@ -19,5 +19,10 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/container-queries'),
+  ],
+  safelist: [
+    'my-5',
+    'font-bold',
+    'text-xl',
   ]
 }

@@ -1,5 +1,6 @@
 class RecipesController < ApplicationController
   before_action :set_recipe, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, except: %i[index show]
 
   # GET /recipes or /recipes.json
   def index
@@ -37,6 +38,7 @@ class RecipesController < ApplicationController
 
   # PATCH/PUT /recipes/1 or /recipes/1.json
   def update
+    authorize @recipe
     respond_to do |format|
       if @recipe.update(recipe_params)
         format.html { redirect_to recipe_url(@recipe), notice: "Recipe was successfully updated." }
